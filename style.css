@@ -1,0 +1,161 @@
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+li,
+a {
+    text-decoration: none;
+    list-style: none;
+}
+
+.container {
+    max-width: 1230px;
+    margin: 0 auto;
+}
+
+.header__top {
+    display: flex;
+    justify-content: space-between;
+    height: 60px;
+    align-items: center;
+    text-align: center;
+}
+
+.header__title {
+    font-size: 30px;
+    font-family: Fira Sans;
+    font-weight: 800;
+    color: green;
+}
+
+.header__button {
+    padding: 8px 18px;
+    border: none;
+    border-radius: 10px;
+    background-color: green;
+    font-size: 18px;
+    font-family: Fira Sans;
+    font-weight: 400;
+    transition: all 0.3s ease;
+}
+
+.header__button:hover {
+    background-color: rgb(7, 59, 7);
+    color: white;
+}
+
+.header__ul {
+    display: flex;
+    justify-content: space-around;
+    height: 40px;
+    text-align: center;
+    align-items: center;
+}
+.header__a {
+    font-size: 20px;
+    font-family: Fira Sans;
+    font-weight: 400;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+.header__a:hover {
+    font-size: 22px;
+}
+
+.description {
+    margin-top: 30px;
+}
+.description__about {
+    font-size: 20px;
+    font-family: Fira Sans;
+    font-weight: 400;
+}
+
+.description__img {
+    margin-top: 30px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+/* =========Calculator======== */
+
+.calculator {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    background-color: #333;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    width: 320px;
+}
+
+.display {
+    width: 100%;
+    height: 50px;
+    background-color: #222;
+    color: #fff;
+    font-size: 1.5em;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    padding: 10px;
+    text-align: right;
+}
+
+.keys {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+button {
+    background-color: #444;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 15px;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #555;
+}
+
+button:active {
+    background-color: #666;
+    transform: scale(0.98);
+}
+
+button:nth-child(4n) {
+    background-color: #ff9500;
+}
+
+button:nth-child(4n):hover {
+    background-color: #ffa733;
+}
+
+button:nth-child(4n):active {
+    background-color: #ffb366;
+}
+
+#clear {
+    background-color: #e53935;
+}
+
+#clear:hover {
+    background-color: #f44336;
+}
+
+#clear:active {
+    background-color: #e57373;
+}
