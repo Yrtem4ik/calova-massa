@@ -17,18 +17,23 @@
             <div class="container">
                 <div class="header">
                     <div class="header__top">
-                        <a href="index.html" class="header__title">
+                        <a href="/index.html" class="header__title">
                             Calculator Online
                         </a>
-                        <button class="header__button">Login</button>
+                        <a href="/html/login.html" class="header__button">Login</a>
+                        <div class="burger" id="burger">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
                     </div>
-                    <div class="header__menu">
+                    <div class="header__menu"  id="headerMenu">
                         <ul class="header__ul">
                             <a href="/index.html" class="header__a">About<a>
-                            <a class="header__a">Calculator</a>
-                            <a class="header__a">Convertor</a>
-                            <a class="header__a">Random Generator</a>
-                            <a class="header__a">Contacs</a>
+                            <a href="./calculator.html" class="header__a active">Calculator</a>
+                            <a href="./convertor.html" class="header__a">Convertor</a>
+                            <a href="./generator.html" class="header__a">Random Generator</a>
+                            <a href="./contacts.html" class="header__a">Contacs</a>
                         </ul>
                     </div>
                 </div>
@@ -53,8 +58,10 @@
                         <button onclick="appendToDisplay('/')">/</button>
                     </div>
                 </div>
-                <script src="../js/calculator.js"></script>
+                <div><iframe width="1200" height="600" src="https://www.youtube.com/embed/PFGBz_iEkZc?list=PL_zDp5rG6HqsGJGG4OUIDCDdEnTyEH-C5" title="Початки алгебри 1/2 | ЗНО МАТЕМАТИКА" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
             </div>
         </div>
     </body>
+    <script src="../js/calculator.js"></script>
+    <script src="/js/burger.js"></script>
 </html>

@@ -20,35 +20,52 @@
                         <a href="index.html" class="header__title">
                             Calculator Online
                         </a>
-                        <button class="header__button">Login</button>
+                        <a href="/html/login.html" class="header__button">Login</a>
+                        <div class="burger" id="burger">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
                     </div>
-                    <div class="header__menu">
+                    <div class="header__menu" id="headerMenu">
                         <ul class="header__ul">
-                            <a class="header__a">About</a>
-                            <a href="./html/calculator.html" class="header__a">
-                                Calculator
-                            </a>
-                            <a class="header__a">Convertor</a>
-                            <a class="header__a">Random Generator</a>
-                            <a class="header__a">Contacs</a>
+                            <li><a class="header__a active">About</a></li>
+                            <li><a href="./html/calculator.html" class="header__a">Calculator</a></li>
+                            <li><a href="./html/convertor.html" class="header__a">Convertor</a></li>
+                            <li><a href="./html/generator.html" class="header__a">Random Generator</a></li>
+                            <li><a href="./html/contacts.html" class="header__a">Contacs</a></li>
                         </ul>
                     </div>
                 </div>
                 <div class="description">
                     <p class="description__about">
-                        Here’s a simple greeting message in English for an
-                        online calculator: "Welcome to our Online Calculator!
+                        Welcome to our Online Calculator!
                         Whether you're doing basic arithmetic or complex
                         calculations, our tool is here to help. Simply enter
                         your numbers, and we'll take care of the rest. Happy
-                        calculating!" Feel free to adjust it according to your
+                        calculating! Feel free to adjust it according to your
                         needs!
                     </p>
                     <div class="description__img">
                         <img src="./img/1.png" alt="" />
                     </div>
+
+                    <div class="parallax-container">
+                        <div class="parallax-layer layer1"></div>
+                        <div class="parallax-layer layer2"></div>
+                        <div class="parallax-layer layer3"></div>
+                        <div class="parallax-layer layer4"></div>
+                        <div class="parallax-content">
+                            <h1>Calculator Online</h1>
+                            <p>Your modern and stylish computing tool</p>
+                            <a href="/html/calculator.html" class="cta-button">Start</a>
+                        </div>
+                    </div>
+                    
                 </div>
             </div>
         </div>
     </body>
+    <script src="/js/parallax.js"></script>
+    <script src="/js/burger.js"></script>
 </html>
